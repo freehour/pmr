@@ -1,14 +1,14 @@
 #ifndef PMR_STRING_H
 #define PMR_STRING_H
 
-#ifdef __cpp_lib_memory_resource
-    #include <string>
-    namespace pmr = std::pmr;
-#elif __cpp_lib_experimental_memory_resources
+#include "memory_resource_feature.h"
+
+#if INCLUDE_PMR_MEMORY_RESOURCE_EXPERIMENTAL
     #include <experimental/string>
     namespace pmr = std::experimental::pmr;
 #else
-    #error "no memory_resource support"
+    #include <string>
+    namespace pmr = std::pmr;
 #endif
 
 #endif //PMR_STRING_H

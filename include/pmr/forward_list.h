@@ -1,14 +1,14 @@
 #ifndef PMR_FORWARD_LIST_H
 #define PMR_FORWARD_LIST_H
 
-#ifdef __cpp_lib_memory_resource
-    #include <forward_list>
-    namespace pmr = std::pmr;
-#elif __cpp_lib_experimental_memory_resources
+#include "memory_resource_feature.h"
+
+#if INCLUDE_PMR_MEMORY_RESOURCE_EXPERIMENTAL
     #include <experimental/forward_list>
     namespace pmr = std::experimental::pmr;
 #else
-    #error "no memory_resource support"
+    #include <forward_list>
+    namespace pmr = std::pmr;
 #endif
 
 #endif //PMR_FORWARD_LIST_H
