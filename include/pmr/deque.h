@@ -4,7 +4,7 @@
 #ifdef __cpp_lib_memory_resource
     #include <deque>
     namespace pmr = std::pmr;
-#elif __cpp_lib_experimental_memory_resource
+#elif __cpp_lib_experimental_memory_resources
     #include <experimental/deque>
     namespace pmr = std::experimental::pmr;
 #else
