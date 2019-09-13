@@ -1,5 +1,5 @@
-#ifndef PMR_MEMORY_RESOURCE_H
-#define PMR_MEMORY_RESOURCE_H
+#ifndef PMR_MEMORY_RESOURCE_FEATURE_H
+#define PMR_MEMORY_RESOURCE_FEATURE_H
 
 /**
  * Similar to
@@ -34,4 +34,4 @@
     #error Could not find system header "<memory_resource>" or "<experimental/memory_resource>"
 #endif
 
-#endif //PMR_MEMORY_RESOURCE_H
+#endif //PMR_MEMORY_RESOURCE_FEATURE_H
