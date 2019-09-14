@@ -1,5 +1,5 @@
-#ifndef PMR_H
-#define PMR_H
+#ifndef PMR_PMR_H
+#define PMR_PMR_H
 
 #include "deque.h"
 #include "forward_list.h"
@@ -13,4 +13,4 @@
 #include "unordered_set.h"
 #include "vector.h"
 
-#endif //PMR_H
+#endif //PMR_PMR_H
