@@ -1,6 +1,13 @@
 #ifndef PMR_MEMORY_RESOURCE_FEATURE_H
 #define PMR_MEMORY_RESOURCE_FEATURE_H
 
+// include version header for feature testing (c++20)
+#ifdef __has_include
+    #if __has_include(<version>)
+        #include <version>
+    #endif
+#endif
+
 /**
  * Similar to
  * https://stackoverflow.com/questions/53365538/how-to-determine-whether-to-use-filesystem-or-experimental-filesystem
